@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="&quot;initial&quot; commit.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="C:\intelijWorspace\calculatorFx\src\sample\displayBox.fxml" afterPath="" />
-      <change type="MOVED" beforePath="C:\intelijWorspace\calculatorFx\src\sample\CalcEngine.java" afterPath="$PROJECT_DIR$/src/calc/CalcEngine.java" />
-      <change type="MOVED" beforePath="C:\intelijWorspace\calculatorFx\src\sample\Display.java" afterPath="$PROJECT_DIR$/src/calc/Display.java" />
-      <change type="MOVED" beforePath="C:\intelijWorspace\calculatorFx\src\sample\Main.java" afterPath="$PROJECT_DIR$/src/calc/Main.java" />
-      <change type="MOVED" beforePath="C:\intelijWorspace\calculatorFx\src\sample\MainController.java" afterPath="$PROJECT_DIR$/src/calc/MainController.java" />
-      <change type="MOVED" beforePath="C:\intelijWorspace\calculatorFx\src\sample\sample.fxml" afterPath="$PROJECT_DIR$/src/calc/calculator.fxml" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calculatorFx.eml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculatorFx.iml" afterPath="$PROJECT_DIR$/calculatorFx.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,10 +98,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="calculator.fxml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.17271157" vertical-offset="0" max-vertical-offset="3100">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Display.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calc/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="323" selection-end="323" vertical-scroll-proportion="0.5181347" vertical-offset="0" max-vertical-offset="1080">
+            <state line="15" column="29" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -387,21 +392,25 @@
       <workItem from="1392455760561" duration="65000" />
       <workItem from="1392456570199" duration="9123000" />
       <workItem from="1392465926931" duration="1586000" />
-      <workItem from="1392482800951" duration="11605000" />
+      <workItem from="1392482800951" duration="12314000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;initial&quot; commit.">
       <created>1392494879352</created>
       <updated>1392494879352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="more meaningful names.&#10;comments.&#10;&#10;">
+      <created>1392496916453</created>
+      <updated>1392496916453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45352000" />
+    <option name="totallyTimeSpent" value="46061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-154" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -417,7 +426,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27103302" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1256656" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1256656" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35363248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -443,7 +452,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="&quot;initial&quot; commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;initial&quot; commit." />
+    <MESSAGE value="more meaningful names.&#10;comments.&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="more meaningful names.&#10;comments.&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -683,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="91" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.41278064" vertical-offset="181" max-vertical-offset="3100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calc/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="10" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
@@ -708,7 +711,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calc/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="323" selection-end="323" vertical-scroll-proportion="0.5181347" vertical-offset="0" max-vertical-offset="1080">
+        <state line="15" column="29" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.17271157" vertical-offset="0" max-vertical-offset="3100">
           <folding />
         </state>
       </provider>
