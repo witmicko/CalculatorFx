@@ -1,4 +1,4 @@
-package sample;
+package calc;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +11,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-//        FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+//        FXMLLoader.load(getClass().getResource("calculator.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("calculator.fxml"));
 //
 //        MainController mainController = new MainController();
         primaryStage.setTitle("Hello World");

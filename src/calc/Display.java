@@ -1,35 +1,18 @@
-package sample;
+package calc;
 
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TextField;
 
-import java.io.IOException;
-
 /**
- * Created by michal on 15/02/14.
+ * Custom class to represent display using TextField
  */
 public class Display extends TextField {
-
-//    public Display(){
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("displayBox.fxml"));
-//        fxmlLoader.setRoot(this);
-//        fxmlLoader.setController(this);
-//        try {
-//            fxmlLoader.load();
-//        } catch (IOException exception) {
-//            throw new RuntimeException(exception);
-//        }
-//
-//    }
-
 
     /**
      * Sets text on the displayBox (displayBox)
      *
      * @param string
      */
-    public void setDisplayBox(String string) {
+    public void setDisplay(String string) {
         this.setText(string);
     }
 
@@ -51,11 +34,15 @@ public class Display extends TextField {
         return this.getText();
     }
 
+    /**
+     * returns last character of the current operation
+     * @return
+     */
     public String getLast() {
         return (getAll().length() > 0) ? getAll().substring(getAll().length() - 1) : "";
     }
 
     public void removeLast() {
-        setDisplayBox(getAll().substring(0, getAll().length() - 1));
+        setDisplay(getAll().substring(0, getAll().length() - 1));
     }
 }

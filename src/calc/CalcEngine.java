@@ -1,7 +1,6 @@
-package sample;
+package calc;
 
 import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
 import java.util.List;

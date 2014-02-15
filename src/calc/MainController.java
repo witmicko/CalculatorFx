@@ -1,4 +1,4 @@
-package sample;
+package calc;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,8 +10,7 @@ import java.util.List;
 
 public class MainController extends GridPane {
     private final static boolean DEBUG = true;
-    @FXML
-    Display display;
+    @FXML Display display;
 
     CalcEngine calcEngine = new CalcEngine();
 
@@ -23,8 +22,7 @@ public class MainController extends GridPane {
     @FXML
     public void numberBtn(ActionEvent actionEvent) {
         Button btn = (Button) actionEvent.getSource();
-        StringBuilder stringBuilder = new StringBuilder(display.getAll());
-        display.setDisplayBox(stringBuilder.append(btn.getText()).toString());
+        display.amendDisplay(btn.getText());
     }
 
     /**
@@ -34,8 +32,8 @@ public class MainController extends GridPane {
      */
     @FXML
     public void decimalPtBtn(ActionEvent actionEvent) {
-        String str = display.getLast();
-        if (str.matches("\\d")) {
+        //check for numbers using regex
+        if (display.getLast().matches("\\d")) {
             display.amendDisplay(".");
         } else display.amendDisplay("0.");
     }
@@ -55,7 +53,7 @@ public class MainController extends GridPane {
         List<Character> chars = Lists.charactersOf(display.getCharacters());
         calcEngine.prefixInput.addAll(chars);
         String answer = calcEngine.computeInput();
-        display.setDisplayBox(answer);
+        display.setDisplay(answer);
     }
 
     @FXML

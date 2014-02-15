@@ -3,11 +3,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import sample.Display?>
+<?import calc.Display?>
 
 <GridPane alignment="center" gridLinesVisible="true" hgap="10" maxHeight="1.7976931348623157E308"
           maxWidth="1.7976931348623157E308" vgap="10" xmlns="http://javafx.com/javafx/8"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.MainController">
     <children>
         <SplitPane dividerPositions="0.5" focusTraversable="true" layoutX="220.0" layoutY="100.0"
                    maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL"
