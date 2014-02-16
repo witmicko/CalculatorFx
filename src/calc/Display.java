@@ -6,7 +6,6 @@ import javafx.scene.control.TextField;
  * Custom class to represent display using TextField
  */
 public class Display extends TextField {
-
     /**
      * Sets text on the displayBox (displayBox)
      *
@@ -16,14 +15,6 @@ public class Display extends TextField {
         this.setText(string);
     }
 
-    /**
-     * adds string at the end of the displayBox
-     *
-     * @param string
-     */
-    public void amendDisplay(String string) {
-        this.setText(getAll() + string);
-    }
 
     /**
      * Returns text currently displayed
