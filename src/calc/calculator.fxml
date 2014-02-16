@@ -5,102 +5,60 @@
 <?import javafx.scene.layout.*?>
 
 <?import calc.Display?>
-<GridPane alignment="center" gridLinesVisible="true" hgap="10" maxHeight="1000"
-          maxWidth="1000" vgap="10" xmlns="http://javafx.com/javafx/8"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.MainController">
+
+<GridPane fx:id="backPane" alignment="center" gridLinesVisible="true" hgap="10" prefHeight="300" prefWidth="300" maxHeight="1000" maxWidth="1000" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.MainController">
     <children>
-        <SplitPane dividerPositions="0.5" focusTraversable="true" layoutX="220.0" layoutY="100.0"
-                   maxHeight="1000" maxWidth="1000" orientation="VERTICAL"
-                   GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER"
-                   GridPane.vgrow="ALWAYS">
+        <SplitPane dividerPositions="0.5" focusTraversable="true" layoutX="220.0" layoutY="100.0" maxHeight="1000" maxWidth="1000" orientation="VERTICAL" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
             <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="263.0"
-                            SplitPane.resizableWithParent="true">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="263.0" SplitPane.resizableWithParent="true">
                     <children>
-                        <Display fx:id="display" AnchorPane.leftAnchor="25" AnchorPane.rightAnchor="25" AnchorPane.topAnchor="15" alignment="CENTER_RIGHT" editable="false" layoutX="20.0"
-                                 layoutY="15.0" prefHeight="44.0" prefWidth="212.0"/>
-                        <GridPane alignment="CENTER" hgap="1.0" layoutX="20.0" layoutY="90.0"
-                                  maxHeight="1000" maxWidth="1000"
-                                  prefHeight="134.0" prefWidth="234.0" vgap="1.0" AnchorPane.bottomAnchor="4.0"
-                                  AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0"
-                                  xmlns:fx="http://javafx.com/fxml">
+                        <Label text="Calculator" AnchorPane.leftAnchor="15" textFill="#fffdf5"/>
+                        <Display fx:id="display"
+                                 AnchorPane.leftAnchor="15"
+                                 AnchorPane.rightAnchor="15"
+                                 AnchorPane.topAnchor="15"
+                                 alignment="CENTER_RIGHT"
+                                 editable="false"
+                                 prefHeight="45.0"/>
+                        <GridPane alignment="CENTER" hgap="3.0" layoutX="20.0" layoutY="90.0" maxHeight="1000" maxWidth="1000" prefHeight="134.0" prefWidth="234.0" vgap="3.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" xmlns:fx="http://javafx.com/fxml">
                             <columnConstraints>
-                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1000" minWidth="10.0"
-                                                   percentWidth="20.0"/>
-                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1000" minWidth="10.0"
-                                                   percentWidth="20.0"/>
-                                <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" xmlns="http://javafx.com/javafx/8"
-                                                   xmlns:fx="http://javafx.com/fxml/1"/>
-                                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="20.0" prefWidth="100.0"
-                                                   xmlns="http://javafx.com/javafx/8"
-                                                   xmlns:fx="http://javafx.com/fxml/1"/>
-                                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="20.0" prefWidth="100.0"
-                                                   xmlns="http://javafx.com/javafx/8"
-                                                   xmlns:fx="http://javafx.com/fxml/1"/>
+                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1000" minWidth="10.0" percentWidth="20.0" />
+                                <ColumnConstraints hgrow="ALWAYS" maxWidth="1000" minWidth="10.0" percentWidth="20.0" />
+                                <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+                                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+                                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS"
-                                                xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"/>
-                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS"/>
-                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS"/>
-                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS"/>
-                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS"
-                                                xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"/>
+                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
                             </rowConstraints>
                             <children>
+                                <Button id="operand" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="X" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Button id="operand" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="/" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <Button id="operand" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="1" />
+                                <Button id="operand" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="-" GridPane.columnIndex="4" GridPane.rowIndex="3" />
 
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="9" textAlignment="CENTER" GridPane.hgrow="ALWAYS"
-                                        GridPane.rowIndex="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="7" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#delBtn" text="DEL" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#acBtn" text="AC" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="4" GridPane.columnIndex="0" GridPane.columnSpan="1"
-                                        GridPane.rowIndex="2"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#opperandBtn" text="*" GridPane.columnIndex="3"
-                                        GridPane.rowIndex="2"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#opperandBtn" text="/" GridPane.columnIndex="4"
-                                        GridPane.rowIndex="2"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#opperandBtn" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3"
-                                        GridPane.rowSpan="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="1" GridPane.rowIndex="3"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#decimalPtBtn" text="." GridPane.columnIndex="2"
-                                        GridPane.rowIndex="4"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4"
-                                        GridPane.rowSpan="1"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#opperandBtn" text="-" GridPane.columnIndex="4"
-                                        GridPane.rowIndex="3"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#answerBtn" text="ans" GridPane.columnIndex="3"
-                                        GridPane.rowIndex="4"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#equalsBtn" text="=" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text="(" GridPane.columnIndex="2"/>
-                                <Button maxHeight="1000" maxWidth="1000"
-                                        onAction="#numberBtn" text=")" GridPane.columnIndex="3"/>
+                                <Button id="decimalBtn" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="." GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                <Button fx:id="delBtn" id="delBtn" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="DEL" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Button fx:id="acBtn" id="acBtn" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="AC" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <Button id="answerBtn" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="Ans" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <Button id="equalsBtn" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="=" GridPane.columnIndex="4" GridPane.rowIndex="4" />
 
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="(" GridPane.columnIndex="2" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text=")" GridPane.columnIndex="3" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="1" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="1" GridPane.rowIndex="3" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="4" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.rowIndex="2" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="7" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Button id="num" maxHeight="1000" maxWidth="1000" onAction="#btnHandler" text="9" textAlignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
                             </children>
                         </GridPane>
                     </children>
@@ -109,9 +67,9 @@
         </SplitPane>
     </children>
     <columnConstraints>
-        <ColumnConstraints/>
+        <ColumnConstraints />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints/>
+        <RowConstraints />
     </rowConstraints>
 </GridPane>

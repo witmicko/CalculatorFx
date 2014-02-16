@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calc/CalcEngine.java" afterPath="$PROJECT_DIR$/src/calc/CalcEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/calc/DigitaldreamFat.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/calc/transitions/PulseTransition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/calc/stylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calc/Display.java" afterPath="$PROJECT_DIR$/src/calc/Display.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calc/Main.java" afterPath="$PROJECT_DIR$/src/calc/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calc/MainController.java" afterPath="$PROJECT_DIR$/src/calc/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calc/calculator.fxml" afterPath="$PROJECT_DIR$/src/calc/calculator.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculatorFx.eml" afterPath="$PROJECT_DIR$/calculatorFx.eml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -77,16 +79,16 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="44" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="960">
+            <state line="29" column="39" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="1000">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calc/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="34" selection-start="1772" selection-end="1772" vertical-scroll-proportion="-0.46991405" vertical-offset="1404" max-vertical-offset="2120">
+            <state line="15" column="18" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1780">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,10 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calc/Display.java">
+      <file leaf-file-name="PulseTransition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calc/transitions/PulseTransition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="900">
+            <state line="47" column="45" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="1060">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stylesheet.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/calc/stylesheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="28" selection-start="651" selection-end="651" vertical-scroll-proportion="1.28" vertical-offset="60" max-vertical-offset="740">
               <folding />
             </state>
           </provider>
@@ -106,7 +117,7 @@
       <file leaf-file-name="calculator.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="129" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="2460">
+            <state line="14" column="47" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1701">
               <folding />
             </state>
           </provider>
@@ -136,10 +147,16 @@
         <option value="$PROJECT_DIR$/src/sample/Display.java" />
         <option value="$PROJECT_DIR$/src/sample/MainController.java" />
         <option value="$PROJECT_DIR$/src/calc/CalcEngine.java" />
-        <option value="$PROJECT_DIR$/src/calc/calculator.fxml" />
-        <option value="$PROJECT_DIR$/src/calc/Main.java" />
         <option value="$PROJECT_DIR$/src/calc/Display.java" />
+        <option value="$PROJECT_DIR$/src/calc/ButtonTransition.java" />
+        <option value="$PROJECT_DIR$/src/calc/Css.java" />
+        <option value="$PROJECT_DIR$/src/calc/transitions/BounceInDownTransition.java" />
+        <option value="$PROJECT_DIR$/src/calc/transitions/BounceInTransition.java" />
+        <option value="$PROJECT_DIR$/src/calc/transitions/PulseTransition.java" />
+        <option value="$PROJECT_DIR$/src/calc/Main.java" />
         <option value="$PROJECT_DIR$/src/calc/MainController.java" />
+        <option value="$PROJECT_DIR$/src/calc/calculator.fxml" />
+        <option value="$PROJECT_DIR$/src/calc/stylesheet.css" />
       </list>
     </option>
   </component>
@@ -214,6 +231,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculatorFx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculatorFx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transitions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -243,10 +282,14 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\intelijWorspace\calculatorFx\src\sample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\intelijWorspace\calculatorFx\src\calc" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -395,7 +438,7 @@
       <workItem from="1392482800951" duration="14055000" />
       <workItem from="1392501721549" duration="2190000" />
       <workItem from="1392503929313" duration="4071000" />
-      <workItem from="1392508703536" duration="209000" />
+      <workItem from="1392508703536" duration="23095000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;initial&quot; commit.">
       <created>1392494879352</created>
@@ -409,19 +452,24 @@
       <created>1392499041522</created>
       <updated>1392499041522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user handler.&#10;bits n bobs">
+      <created>1392508931753</created>
+      <updated>1392508931753</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54272000" />
+    <option name="totallyTimeSpent" value="77158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -429,21 +477,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27039275" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21752267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17824773" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39903846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24546827" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3573718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -461,7 +508,8 @@
     <MESSAGE value="&quot;initial&quot; commit." />
     <MESSAGE value="more meaningful names.&#10;comments.&#10;&#10;" />
     <MESSAGE value="edited classpath for cross compatibility with eclipse" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited classpath for cross compatibility with eclipse" />
+    <MESSAGE value="user handler.&#10;bits n bobs" />
+    <option name="LAST_COMMIT_MESSAGE" value="user handler.&#10;bits n bobs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -471,73 +519,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/calc/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="129" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="2460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="33" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1680">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/CalcEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="89" selection-start="1042" selection-end="1216" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="3060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="62" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="1119" max-vertical-offset="1720">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calc/CalcEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
@@ -794,33 +775,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/jfxrt.jar!/javafx/scene/text/Font.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="820">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="129" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1845">
+        <state line="50" column="41" selection-start="2214" selection-end="2214" vertical-scroll-proportion="0.0" vertical-offset="868" max-vertical-offset="1640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calc/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="900">
+        <state line="2" column="37" selection-start="52" selection-end="52" vertical-scroll-proportion="0.11461318" vertical-offset="0" max-vertical-offset="1000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/CachedTimelineTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="15" selection-start="480" selection-end="480" vertical-scroll-proportion="-1.0630373" vertical-offset="711" max-vertical-offset="1860">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1693#2108#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/TadaTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="60" selection-start="665" selection-end="689" vertical-scroll-proportion="-0.7449857" vertical-offset="720" max-vertical-offset="2020">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/BounceInDownTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/RotateOutDownLeftTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="13" selection-start="668" selection-end="668" vertical-scroll-proportion="1.3753582" vertical-offset="0" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/FlipTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="13" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-0.5272206" vertical-offset="864" max-vertical-offset="2060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/BounceInTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="51" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.7335244" vertical-offset="804" max-vertical-offset="1420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/transitions/PulseTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="45" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1060">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calc/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="34" selection-start="1772" selection-end="1772" vertical-scroll-proportion="-0.46991405" vertical-offset="1404" max-vertical-offset="2120">
+        <state line="15" column="18" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1780">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/calculator.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="47" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1701">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="39" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="1000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="28" selection-start="651" selection-end="651" vertical-scroll-proportion="1.28" vertical-offset="60" max-vertical-offset="740">
+          <folding />
         </state>
       </provider>
     </entry>

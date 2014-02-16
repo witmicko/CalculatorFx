@@ -2,10 +2,15 @@ package calc;
 
 import javafx.scene.control.TextField;
 
+
 /**
  * Custom class to represent display using TextField
  */
 public class Display extends TextField {
+
+    public Display(){
+//        this.;
+    }
     /**
      * Sets text on the displayBox (displayBox)
      *
