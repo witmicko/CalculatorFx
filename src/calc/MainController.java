@@ -7,17 +7,10 @@ import com.google.common.collect.Lists;
 import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
-
-import javax.swing.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainController {
-    //    @FXML GridPane keyboard;
-    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, acBtn, ansBtn, equalsBtn;
-    @FXML Button _0Btn, _1Btn, _2Btn, _3Btn, _4Btn, _5Btn, _6Btn, _7Btn, _8Btn, _9Btn, leftBrBtn, rightBrBtn;
+    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, acBtn, ansBtn, equalsBtn,openBracket, closeBracket;
 
     private final static String OPERANDS = "[-+/X]";
     private final static boolean DEBUG = true;
@@ -90,27 +83,10 @@ public class MainController {
 
     @FXML
     public void keyHandler(KeyEvent event) {
-        System.out.println("code: " + event.getCode());
         KeyCode code = event.getCode();
+        System.out.println("code: " + code.toString());
+
         switch (code) {
-            case MULTIPLY:
-                multBtn.fire();
-                break;
-            case DIVIDE:
-                divBtn.fire();
-                break;
-            case PLUS:
-            case ADD:
-                plusBtn.fire();
-                break;
-            case MINUS:
-            case SUBTRACT:
-                minusBtn.fire();
-                break;
-            case DECIMAL:
-            case PERIOD:
-                decimalBtn.fire();
-                break;
             case BACK_SPACE:
             case DELETE:
                 delBtn.fire();
@@ -119,51 +95,28 @@ public class MainController {
             case EQUALS:
                 equalsBtn.fire();
                 break;
-            case DIGIT0:
-            case NUMPAD0:
-                _0Btn.fire();
+        }
+        switch (event.getText()) {
+            case "(":
+                openBracket.fire();
                 break;
-            case DIGIT1:
-            case NUMPAD1:
-                _1Btn.fire();
+            case ")":
+                closeBracket.fire();
                 break;
-            case DIGIT2:
-            case NUMPAD2:
-                _2Btn.fire();
+            case ".":
+                decimalBtn.fire();
                 break;
-            case DIGIT3:
-            case NUMPAD3:
-                _3Btn.fire();
+            case "+":
+                plusBtn.fire();
                 break;
-            case DIGIT4:
-            case NUMPAD4:
-                _4Btn.fire();
+            case "-":
+                minusBtn.fire();
                 break;
-            case DIGIT5:
-            case NUMPAD5:
-                _5Btn.fire();
+            case "*":
+                multBtn.fire();
                 break;
-            case DIGIT6:
-            case NUMPAD6:
-                _6Btn.fire();
-                break;
-            case DIGIT7:
-            case NUMPAD7:
-                _7Btn.fire();
-                break;
-            case DIGIT8:
-            case NUMPAD8:
-                _8Btn.fire();
-                break;
-            case DIGIT9:
-            case NUMPAD9:
-                _9Btn.fire();
-                break;
-            case OPEN_BRACKET:
-                leftBrBtn.fire();
-                break;
-            case CLOSE_BRACKET:
-                rightBrBtn.fire();
+            case "/":
+                divBtn.fire();
                 break;
         }
     }
