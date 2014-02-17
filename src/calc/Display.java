@@ -1,5 +1,6 @@
 package calc;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 
@@ -8,37 +9,32 @@ import javafx.scene.control.TextField;
  */
 public class Display extends TextField {
 
-    public Display(){
+    public Display() {
 //        this.;
     }
+
     /**
      * Sets text on the displayBox (displayBox)
      *
      * @param string
      */
+    @FXML
     public void setDisplay(String string) {
         this.setText(string);
     }
 
-
     /**
-     * Returns text currently displayed
+     * returns last character of the current operation
      *
      * @return
      */
-    public String getAll() {
-        return this.getText();
-    }
-
-    /**
-     * returns last character of the current operation
-     * @return
-     */
     public String getLast() {
-        return (getAll().length() > 0) ? getAll().substring(getAll().length() - 1) : "";
+        return (getText().length() > 0) ? getText().substring(getText().length() - 1) : "";
     }
 
     public void removeLast() {
-        setDisplay(getAll().substring(0, getAll().length() - 1));
+        if (getText().length() > 0) {
+            setDisplay(getText().substring(0, getText().length() - 1));
+        }
     }
 }
