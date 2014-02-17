@@ -1,7 +1,9 @@
 package calc;
 
 import javafx.application.Application;
+import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Node;
@@ -16,6 +18,7 @@ import java.net.URL;
 import java.util.List;
 
 public class Main extends Application {
+//    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn,openBracket, closeBracket;
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
@@ -33,9 +36,11 @@ public class Main extends Application {
         scene.getStylesheets().add(stylesheet);
 
         final MainController mainController = fxmlLoader.getController();
+
         scene.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
+                System.out.println(event.toString());
                 Button btn= (Button) fxmlLoader.getNamespace().get(event.getText());
                 if (btn != null) {
                     btn.fire();

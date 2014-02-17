@@ -10,7 +10,7 @@ import javafx.scene.input.KeyEvent;
 import java.util.List;
 
 public class MainController {
-    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, acBtn, ansBtn, equalsBtn,openBracket, closeBracket;
+    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn,openBracket, closeBracket;
 
     private final static String OPERANDS = "[-+/X]";
     private final static boolean DEBUG = true;
@@ -19,7 +19,6 @@ public class MainController {
 
     @FXML
     public void btnHandler(ActionEvent event) {
-        System.out.println(event.toString());
         Button btn = (Button) event.getSource();
         new PulseTransition(btn).play();
 
@@ -85,17 +84,8 @@ public class MainController {
     public void keyHandler(KeyEvent event) {
         KeyCode code = event.getCode();
         System.out.println("code: " + code.toString());
+        System.out.println("event"+ event.toString());
 
-        switch (code) {
-            case BACK_SPACE:
-            case DELETE:
-                delBtn.fire();
-                break;
-            case ENTER:
-            case EQUALS:
-                equalsBtn.fire();
-                break;
-        }
         switch (event.getText()) {
             case "(":
                 openBracket.fire();
@@ -117,6 +107,16 @@ public class MainController {
                 break;
             case "/":
                 divBtn.fire();
+                break;
+        }
+        switch (code) {
+            case BACK_SPACE:
+            case DELETE:
+                delBtn.fire();
+                break;
+            case ENTER:
+            case EQUALS:
+                equalsBtn.fire();
                 break;
         }
     }
