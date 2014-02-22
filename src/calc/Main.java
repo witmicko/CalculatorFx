@@ -1,9 +1,7 @@
 package calc;
 
 import javafx.application.Application;
-import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Node;
@@ -15,14 +13,13 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.net.URL;
-import java.util.List;
 
 public class Main extends Application {
 //    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn,openBracket, closeBracket;
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
-        URL location = getClass().getResource("res\\calculator.fxml");
+        URL location = getClass().getResource("calculator.fxml");
         final FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(location);
         fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
@@ -32,7 +29,7 @@ public class Main extends Application {
         URL font = getClass().getResource("DigitaldreamFat.ttf");
         Font.loadFont(font.toExternalForm(), 50);
 
-        String stylesheet = getClass().getResource("res\\stylesheet.css").toExternalForm();
+        String stylesheet = getClass().getResource("stylesheet.css").toExternalForm();
         scene.getStylesheets().add(stylesheet);
 
         final MainController mainController = fxmlLoader.getController();

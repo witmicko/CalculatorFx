@@ -12,7 +12,7 @@ import java.util.List;
 public class MainController {
     @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn,openBracket, closeBracket;
 
-    private final static String OPERANDS = "[-+/X]";
+    private final static String OPERANDS = "[-+/\\*]";
     private final static boolean DEBUG = true;
     @FXML Display display;
     CalcEngine calcEngine = new CalcEngine();
@@ -63,9 +63,7 @@ public class MainController {
 
 
     public void equalsBtn() {
-        List<Character> chars = Lists.charactersOf(display.getCharacters());
-        calcEngine.prefixInput.addAll(chars);
-        String answer = calcEngine.computeInput();
+        String answer = calcEngine.computeInput(display.getText());
         display.setDisplay(answer);
     }
 
