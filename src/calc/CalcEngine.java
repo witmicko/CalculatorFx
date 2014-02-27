@@ -9,7 +9,9 @@ import java.util.*;
 import java.util.List;
 
 /**
- * Created by michal on 14/02/14.
+ * Calculator engine, changes input infix expression into an postfix(RPN) and evaluates the RPN.
+ *
+ * @author Michal Ogrodniczak
  */
 public class CalcEngine {
     private Stack<OPERATOR> operatorStack = new Stack<>();
@@ -21,8 +23,8 @@ public class CalcEngine {
         SUB     ("-", "\\-", 2),
         MULT    ("*", "\\*", 3),
         DIV     ("/", "\\/", 3),
-        OPEN_BR ("(", "\\(", -1),
-        CLOSE_BR(")", "\\)", -1);
+        OPEN_BR ("(", "\\(", 0),
+        CLOSE_BR(")", "\\)", 0);
         //@formatter:on
 
         private final String op;
@@ -45,15 +47,24 @@ public class CalcEngine {
     public CalcEngine() {
     }
 
-    public String computeInput(String text) {
+    public String computeInput(String input) {
         operatorStack.clear();
+        //@formatter:off
+        //regex matching/replacing to correct the input syntax
+        String text = input.replace   ("(-", "(0-")
+                           .replace   ("(+", "(0+")
+                           .replaceAll("^[\\-\\+]", "0" + input.charAt(0));
+        //@formatter:on
         System.out.println("input: " + text);
+
         ArrayList<String> ops = split(text);
         MyStack postfix = convertToPostfix(ops);
-        double result = evaluatePostfix(postfix);
         System.out.println("output stack " + postfix);
+        double result = evaluatePostfix(postfix);
         System.out.println(result);
-        return String.valueOf(result);
+
+        this.lastAnswer = (result == (int) result) ? String.valueOf((int) result) : String.valueOf(result);
+        return lastAnswer;
     }
 
     private MyStack convertToPostfix(ArrayList<String> ops) {
@@ -79,8 +90,9 @@ public class CalcEngine {
     private double evaluatePostfix(MyStack input) {
         MyStack output = new MyStack();
         for (Object o : input) {
-            double temp=0.0;
+            double temp = 0.0;
             output.push(o);
+            System.out.println("in:  " + output.toString());
             if (output.peek() instanceof OPERATOR) {
                 OPERATOR op = (OPERATOR) output.pop();
                 double operand1 = (double) output.pop();
@@ -94,17 +106,18 @@ public class CalcEngine {
                         temp = (operand2 - operand1);
                         break;
                     case MULT:
-                        temp = (operand2*operand1);
+                        temp = (operand2 * operand1);
                         break;
                     case DIV:
-                        if(operand1==0)temp = Double.NaN;
+                        if (operand1 == 0) temp = Double.NaN;
                         else temp = operand2 / operand1;
                         break;
                 }
                 output.push(temp);
+                System.out.println("out: " + output);
             }
         }
-        return (double)output.pop();
+        return (double) output.pop();
     }
 
     private void handleOperator(OPERATOR op, MyStack output) {
@@ -113,12 +126,12 @@ public class CalcEngine {
         else if (op == OPERATOR.CLOSE_BR) {
             while (operatorStack.peek() != OPERATOR.OPEN_BR) {
                 output.push(operatorStack.pop());
-            }
+            }//next one is OPEN_BRacket, so pop it
             operatorStack.pop();
         } else {
             while (!operatorStack.isEmpty() && operatorStack.peek().precedence >= op.precedence) {
                 output.push(operatorStack.pop());
-            }
+            }//current operator is less or equal in precedence to the top one on the stack, so it can be pushed
             operatorStack.push(op);
         }
     }
@@ -144,9 +157,8 @@ public class CalcEngine {
 
 
     public static void main(String[] args) {
-        System.out.println(1.0/0);
         CalcEngine engine = new CalcEngine();
-        engine.computeInput("(4+(5*8))");
+        engine.computeInput("(-3+8)-(3*(-9))");
     }
 
     private static boolean isNumber(String str) {

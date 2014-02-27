@@ -14,11 +14,16 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 
+/**
+ * Main application class, manages and loads the resources and initializes the controller.
+ *
+ * @author Michal Ogrodniczak
+ */
 public class Main extends Application {
-//    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn,openBracket, closeBracket;
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
+
         URL location = getClass().getResource("calculator.fxml");
         final FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(location);
@@ -26,14 +31,18 @@ public class Main extends Application {
         final Parent root = (Parent) fxmlLoader.load(location.openStream());
         final Scene scene = new Scene(root);
 
+        //custom font
         URL font = getClass().getResource("DigitaldreamFat.ttf");
         Font.loadFont(font.toExternalForm(), 50);
 
+        //customized css stylesheet
         String stylesheet = getClass().getResource("stylesheet.css").toExternalForm();
         scene.getStylesheets().add(stylesheet);
 
         final MainController mainController = fxmlLoader.getController();
 
+        //keyboard event handler, nuber keys fire directly whereas function keys need to be handled differently,
+        //due to use of special characters
         scene.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
@@ -54,23 +63,5 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    /**
-     * ref: StackOverflow
-     *
-     * @param parent
-     * @param id
-     * @param clazz
-     * @param <T>
-     * @return
-     */
-    public <T> T lookup(Node parent, String id, Class<T> clazz) {
-        for (Node node : parent.lookupAll(id)) {
-            if (node.getClass().isAssignableFrom(clazz)) {
-                return (T) node;
-            }
-        }
-        throw new IllegalArgumentException("Parent " + parent + " doesn't contain node with id " + id);
     }
 }

@@ -2,21 +2,30 @@ package calc;
 
 import calc.transitions.*;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import com.google.common.collect.Lists;
 import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import java.util.List;
 
+/**
+ * Class responsible for handling UI events
+ *
+ * @author Michal Ogrodniczak
+ */
 public class MainController {
-    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn,openBracket, closeBracket;
+    @FXML Button multBtn, divBtn, plusBtn, minusBtn, decimalBtn, delBtn, equalsBtn, openBracket, closeBracket;
 
-    private final static String OPERANDS = "[-+/\\*]";
+    private final static String OPERATORS = "[-+/*]";
     private final static boolean DEBUG = true;
     @FXML Display display;
     CalcEngine calcEngine = new CalcEngine();
 
+    /**
+     * handles button clicks,depending on id of the button calls appropriate methods
+     *
+     * @param event an ActionEvent created by javaFx.
+     */
     @FXML
     public void btnHandler(ActionEvent event) {
         Button btn = (Button) event.getSource();
@@ -29,7 +38,7 @@ public class MainController {
                 display.appendText(btnTxt);
                 break;
             case "operand":
-                opperandBtn(btnTxt);
+                operatorBtn(btnTxt);
                 break;
             case "equalsBtn":
                 equalsBtn();
@@ -44,7 +53,7 @@ public class MainController {
                 display.clear();
                 break;
             case "answerBtn":
-                display.setDisplay(calcEngine.lastAnswer);
+                display.setText(calcEngine.lastAnswer);
                 break;
             default:
                 System.out.println("should not have done that");
@@ -61,28 +70,61 @@ public class MainController {
         } else display.appendText("0.");
     }
 
-
+    /**
+     * Calls CalcEngine sending currently stored expression on the display,
+     * CalcEngine returns mathematical solution(result) and it is displayed.
+     * In case of invalid syntax an exception is caught and notifies user of the error after which display is set to
+     * to last known state.
+     */
     public void equalsBtn() {
-        String answer = calcEngine.computeInput(display.getText());
-        display.setDisplay(answer);
+        final String expr = display.getText();
+        try {
+            String answer = calcEngine.computeInput(display.getText());
+            display.setText(answer);
+        } catch (NullPointerException e) {
+            display.setText("SYNTAX ERROR");
+            BounceTransition bounce = new BounceTransition(display);
+            bounce.setOnFinished(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    display.setText(expr);
+                }
+            });
+            bounce.play();
+        }
     }
 
-    public void opperandBtn(String btnTxt) {
-        if (display.getLast().matches(OPERANDS)) {
+    /**
+     * handles operator buttons [/*-+]. restricts to only one consecutive operator, in order to do an
+     * operation on negative number an user must use <operator>(-<number>) syntax.
+     * @param btnTxt
+     */
+    public void operatorBtn(String btnTxt) {
+        if (display.getLast().matches(OPERATORS)) {
             display.removeLast();
             display.appendText(btnTxt);
         } else display.appendText(btnTxt);
     }
 
+    /**
+     * an utility method used for debugging.
+     * @param prompt
+     */
     private void debugPrint(String prompt) {
         if (DEBUG) System.out.println(prompt);
     }
 
+    /**
+     * keyboard handler, it is possible to operate this calculator using keyboard, but input methods
+     * cannot be mixed as then only mouse works.
+     * The method itself has a nasty switch statement but this was the only solution that worked.
+     * @param event
+     */
     @FXML
     public void keyHandler(KeyEvent event) {
         KeyCode code = event.getCode();
-        System.out.println("code: " + code.toString());
-        System.out.println("event"+ event.toString());
+        debugPrint("code: " + code.toString());
+        debugPrint("event"+ event.toString());
 
         switch (event.getText()) {
             case "(":

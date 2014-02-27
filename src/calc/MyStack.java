@@ -5,31 +5,43 @@ import java.util.Arrays;
 import java.util.Deque;
 
 /**
- * Created by michal on 16/02/14.
+ * Custom dynamic multi class type stack class. Implements all stack operations.
+ *
+ * @author Michal Ogrodniczak
  */
-public class MyStack extends ArrayList{
-    private final double RAM_PERCENTAGE_PER_STACK = 0.1;
-    private int maxSize;
+public class MyStack extends ArrayList {
 
     public MyStack() {
-        //1 int == 8 bytes
-//        this.maxSize = (int) ((Runtime.getRuntime().freeMemory() / 8) * RAM_PERCENTAGE_PER_STACK);
     }
 
+    /**
+     * standard stack push method, appends new object on the top of the stack.
+     * @param object
+     */
     public void push(Object object) {
-//        try {
-//            if (this.size() < this.maxSize)
-                this.add(object);
-//            else throw new StackOverFlowException("StackOverFlowException in push()" + this.toString());
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
+        this.add(object);
     }
-    public Object pop(){
-        if(this.size()>0){
-            Object obj = this.get(this.size()-1);
-            this.remove(this.size()-1);
-            System.out.println();
+
+    /**
+     * method removes and returns top object of the stack if such exits, otherwise a null object is returned.
+     * @return
+     */
+    public Object pop() {
+        if (this.size() > 0) {
+            Object obj = this.get(this.size() - 1);
+            this.remove(this.size() - 1);
+            return obj;
+        }
+        return null;
+    }
+
+    /**
+     * return top object of the stack without removing it.
+     * @return
+     */
+    public Object peek() {
+        if (this.size() > 0) {
+            Object obj = this.get(this.size() - 1);
             return obj;
         }
         return null;
@@ -38,18 +50,10 @@ public class MyStack extends ArrayList{
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        for(Object o: this){
-            stringBuilder.append(o.toString()+", ");
+        for (Object o : this) {
+            stringBuilder.append(o.toString() + ", ");
         }
         return stringBuilder.toString();
-    }
-
-    public Object peek() {
-        if(this.size()>0){
-            Object obj = this.get(this.size()-1);
-            return obj;
-        }
-        return null;
     }
 
 }

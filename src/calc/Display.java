@@ -1,30 +1,20 @@
 package calc;
 
-import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-
 /**
- * Custom class to represent display using TextField
+ * Custom class to represent display using TextField, doing this allowed addition of extra utility methods for handling
+ * the display.
+ *
+ * @author Michal Ogrodniczak
  */
 public class Display extends TextField {
 
     public Display() {
-//        this.;
     }
 
     /**
-     * Sets text on the displayBox (displayBox)
-     *
-     * @param string
-     */
-    @FXML
-    public void setDisplay(String string) {
-        this.setText(string);
-    }
-
-    /**
-     * returns last character of the current operation
+     * returns last character of the current operation.
      *
      * @return
      */
@@ -32,9 +22,12 @@ public class Display extends TextField {
         return (getText().length() > 0) ? getText().substring(getText().length() - 1) : "";
     }
 
+    /**
+     * removes very last character on the display.
+     */
     public void removeLast() {
         if (getText().length() > 0) {
-            setDisplay(getText().substring(0, getText().length() - 1));
+            setText(getText().substring(0, getText().length() - 1));
         }
     }
 }
